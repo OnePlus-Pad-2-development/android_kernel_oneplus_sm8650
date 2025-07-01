@@ -101,3 +101,7 @@ obj-$(CONFIG_OPLUS_SENSOR_CONSUMER_IR_CORE) += oplus_consumer_ir/
 #ifdef CONFIG_OPLUS_SYNC_FENCE
 obj-$(CONFIG_OPLUS_SYNC_FENCE) += oplus_sync_fence/
 #endif /* CONFIG_OPLUS_SYNC_FENCE */
+
+#ifdef CONFIG_POGO_KEYBOARD
+obj-$(CONFIG_POGO_KEYBOARD) += pogo_keyboard/
+#endif /* CONFIG_POGO_KEYBOARD */

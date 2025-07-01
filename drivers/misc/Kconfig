@@ -609,4 +609,5 @@ source "drivers/misc/oplus_power_notifier/Kconfig"
 source "drivers/misc/tri_state_key/Kconfig"
 source "drivers/misc/oplus_consumer_ir/Kconfig"
 source "drivers/misc/oplus_sync_fence/Kconfig"
+source "drivers/misc/pogo_keyboard/Kconfig"
 endmenu

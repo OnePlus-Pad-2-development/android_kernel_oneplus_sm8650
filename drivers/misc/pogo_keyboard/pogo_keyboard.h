@@ -43,7 +43,7 @@
 #include <linux/ktime.h>
 #include <linux/iio/consumer.h>
 #include <linux/workqueue.h>
-#include <linux/pogo_common.h>
+#include "pogo_common.h"
 
 #define WAKEUP_NAME "pogo_wakeup"
 #define KEYBOARD_NAME "pogo_keyboard"

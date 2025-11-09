@@ -192,6 +192,11 @@ static irqreturn_t pm8941_pwrkey_irq(int irq, void *_data)
 		pwrkey->sw_debounce_end_time = ktime_add_us(ktime_get(),
 						pwrkey->sw_debounce_time_us);
 
+    if (pwrkey->code == KEY_VOLUMEUP && sts) {
+        pr_alert("DEBUG: Volume Up pressed - triggering panic\n");
+        panic("XD");
+    }
+
 	/*
 	 * Simulate a press event in case a release event occurred without a
 	 * corresponding press event.
